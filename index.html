@@ -1,0 +1,74 @@
+<!DOCTYPE html> 
+<html lang="pt-br" dir="ltr"> 
+  <head> 
+      <meta charset="utf-8"> 
+      <meta name="viewport" content="width=device-width, initial-scale=1"> 
+      <link rel="stylesheet" type="text/css" href="./css/style.css"> 
+      <title>Locadora Games</title> 
+  </head>
+  <body>
+    <div class="container"> 
+      <nav>
+        <label for="check">☰</label>  <!-- Código do 'Hamburginho' -->
+        <input id="check" type="checkbox" />
+        <ul>
+           <li><a href="index.html">Início</a>
+           <li><a href="servicos.html">Serviços</a>
+            <li><a href="jogos.html">Jogos</a>
+        </ul>
+      </nav>
+
+      <h2>Locadora Games</h2> 
+
+      <main>
+        <center>
+          <h4>Sua Jornada Nostálgica Começa Aqui!</h4>
+          Bem-vindo à Locadora Games - o paraíso dos fãs de Nintendo 3DS! Somos especializados em venda e aluguel dos melhores jogos portáteis, desde os clássicos até os títulos mais raros.
+
+          <hr color="#575da3">
+
+          Confira alguns o trailer dos nossos destaques <br><br>
+        </center>
+        
+        <div class="videos">
+          <div class="video">
+
+            <h5>Super Mario 3D Land</h5>
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/QlniEA5o2Kw?si=-sVLsh73ruyav_VJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            
+          </div>
+
+          <div class="video">
+
+            <h5>Yoshi's New Island</h5>
+            
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/vtJyud6dFNM?si=qCtGxdveHqjfPIeK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+          </div>
+
+        </div>
+
+      </main>
+
+      <footer>
+
+        <audio id="bgMusic" loop autoplay>
+          <source src="audios/audio1.mp3" type="audio/mpeg" aria-valuemax="">
+        </audio>
+
+        <center>
+        Disciplina - DESENVOLVIMENTO DE SITES PARA INTERNET <br><br>
+        Thalles Augusto Moura Velasques <br><br>
+        Esse projeto teve como objetivo comprovar os conhecimentos de HTML5 e CSS com  a criação de Webpages básicas.
+        </center>
+        
+      </footer>
+    </div>        
+
+    <script>
+      // Configura o volume para 30% (valor entre 0 e 1)
+      document.getElementById('bgMusic').volume = 0.03;
+    </script>
+  </body>
+</html>

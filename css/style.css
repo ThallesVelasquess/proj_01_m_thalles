@@ -1,0 +1,184 @@
+/* IMPORTANDO FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+
+h2{
+    font-family: "Pixelify Sans", sans-serif;
+    font-size: xx-large;
+}
+
+/* PÁGINA PRINCIPAL */
+footer{
+    margin-top: 15vh;
+    padding-top: 3%;
+    min-height: 20vh;
+    background-color: #646769;
+}
+
+/* MENU RESPONSIVO */
+
+body, div, ul, li {
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body { 
+    font-size: 1em;
+    background-color: #343536;
+    color: #f2f2f2;
+}
+h1, h2 {
+    text-align: center;
+}
+.container {
+    margin: 0 auto;
+}
+p {
+    margin: 20px 4%;
+    font-size: 1.3rem;
+    text-align: justify;
+}
+#check {
+    display: none;
+} 
+label {
+    font-size: 3rem;
+    padding-left: 3%;
+}
+nav {
+    background-color: #8791F6;
+    position: sticky; 
+    top: 0;          /* Distância do topo onde trava */
+    z-index: 1000;   /* Garante que fique acima de outros elementos */
+
+}
+nav ul {
+    list-style-type: none;
+    background-color: #575da3;
+    height: 100vh;
+    position: fixed;
+    top: 63px;
+    right: -100%;   /* Esconde menu */
+    width: 100%;
+    transition: all 0.5s;
+}
+nav ul li {
+    padding: 20px;
+    border-bottom: 1px solid #a9a9a9;
+}
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+#check:checked ~ ul {  
+    /* Quando houver uma alteração (click) no botão, faz a transição do menu. */
+    right: 0; 
+}
+
+/* RESPONSIVO - Teste para viewport acima de 1000px. */
+
+@media (min-width: 1200px){
+    
+    label {
+        display: none;
+    }
+    nav ul {
+        position: static;
+        height: auto;
+        background-color: transparent;
+        display: flex;
+        justify-content: center;
+    }
+    nav ul li {
+        border: 0;
+        /* Zera o espaço do box (li)... */
+        padding: 0;             
+    }
+    nav ul li a {
+        /* Para link crescer e ocupar todo o espaço do box. */
+        display: inline-block;  
+        padding: 20px 30px;
+    }
+    nav ul li a:hover{
+        background-color: #575da3;
+    }
+}
+
+/* PÁGINA HOME */
+.videos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 650px); /* cria quantas colunas de 600px couberem no espaço disponível */ 
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.video{
+    width: 600px;
+    height: 500px;
+    background-color: #646769;
+    border-radius: 25px;
+
+}
+
+iframe{
+    padding-top: 40px;
+    padding-left: 20px;
+}
+
+h5{
+    padding-left: 230px;
+}
+
+
+/* PÁGINA DE JOGOS */
+.jogos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 600px); /* cria quantas colunas de 600px couberem no espaço disponível */ 
+    justify-content: center;
+    gap: 20px; /* Espaço entre os itens */
+}
+
+.jogo{
+    width: 600px;
+    height: 500px;
+    background-color: #646769;
+    border-radius: 25px;
+
+}
+
+.jogos-img{
+    margin-top: 50px;
+    margin-left: 110px;
+    width: 375px;
+
+}
+
+.botoes{
+    display: flex;
+    justify-content: center; /* centraliza horizontalmente */
+    align-items: flex-end;   /* alinha os itens no final (parte inferior) */
+    height: 80px; /* ou qualquer altura desejada */
+}
+
+.botao{
+    color: #f2f2f2;
+    cursor: pointer;
+    background-color: #8791F6;
+    border: none;
+    border-radius: 30px;
+    width: 160px;
+    height: 60px;
+    margin-right: 35px;
+    margin-left: 35px;
+}
+
+.botao:hover{
+    cursor: pointer;
+    background-color: #575da3;
+    border: none;
+    border-radius: 30px;
+    width: 160px;
+    height: 60px;
+    margin-right: 35px;
+    margin-left: 35px;
+
+}
